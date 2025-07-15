@@ -53,7 +53,7 @@ const TestimonialsSection = React.memo(() => {
                   ) : (
                     <video 
                       key={`${testimonial.name}-${testimonial.videoUrl}`}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                       controls
                       preload="metadata"
                       playsInline
