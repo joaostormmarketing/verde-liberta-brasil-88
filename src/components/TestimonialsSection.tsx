@@ -15,6 +15,13 @@ const TestimonialsSection = React.memo(() => {
       location: "Recife - PE",
       rating: 5,
       videoUrl: "/video-nathalia-depoimento.mp4"
+    },
+    {
+      name: "Jéssica",
+      location: "Belo Horizonte - MG",
+      rating: 5,
+      videoUrl: "https://drive.google.com/file/d/15XKE-jYUldYPGkz8vnDY8Zi25htn9sc9/preview",
+      isGoogleDrive: true
     }
   ], []);
 
