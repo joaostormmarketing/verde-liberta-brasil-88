@@ -20,8 +20,8 @@ const TestimonialsSection = React.memo(() => {
       name: "Jéssica",
       location: "Belo Horizonte - MG",
       rating: 5,
-      videoUrl: "https://youtube.com/shorts/7-zDjooqHxw?feature=share",
-      isYoutube: true
+      videoUrl: "https://drive.google.com/file/d/15XKE-jYUldYPGkz8vnDY8Zi25htn9sc9/preview",
+      isGoogleDrive: true
     }
   ], []);
 
@@ -38,10 +38,10 @@ const TestimonialsSection = React.memo(() => {
             <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-lg">
               <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4" style={{ aspectRatio: '9/16' }}>
                 {testimonial.videoUrl ? (
-                  testimonial.isYoutube ? (
+                  (testimonial as any).isGoogleDrive ? (
                     <iframe
                       className="w-full h-full"
-                      src={`https://www.youtube.com/embed/${testimonial.videoUrl.split('/').pop()?.split('?')[0]}?modestbranding=1&showinfo=0&rel=0&controls=1`}
+                      src={testimonial.videoUrl}
                       title={`Depoimento ${testimonial.name}`}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
