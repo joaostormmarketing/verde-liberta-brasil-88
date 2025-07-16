@@ -68,7 +68,7 @@ const HeroSection = () => {
           }, [])}
           className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-green-500 hover:bg-green-600 text-black font-bold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-full text-lg sm:text-xl lg:text-2xl transition-all duration-300 hover:scale-105 shadow-lg w-full max-w-md mx-auto"
         >
-          <span className="text-center">QUERO LIMPAR MEU NOME AGORA!</span>
+          <span className="text-center">Quero atendimento on-line agora</span>
         </button>
         
         <div className="text-xs sm:text-sm text-gray-400 mt-4 max-w-2xl mx-auto px-4 flex flex-wrap justify-center gap-2 sm:gap-4">

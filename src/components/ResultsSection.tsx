@@ -43,7 +43,7 @@ const ResultsSection = () => {
             }}
             className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-white hover:bg-gray-100 text-green-500 font-bold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-lg text-base sm:text-lg lg:text-xl transition-all duration-300 hover:scale-105 w-full max-w-sm mx-auto"
           >
-            Garantir Minha Vaga Agora!
+            Quero atendimento on-line agora
           </button>
         </div>
       </div>

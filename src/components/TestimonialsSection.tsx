@@ -34,8 +34,8 @@ const TestimonialsSection = React.memo(() => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-lg">
-              <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4" style={{ aspectRatio: '9/16', minHeight: '400px' }}>
+            <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-lg h-full flex flex-col">
+              <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4 flex-grow" style={{ aspectRatio: '9/16', minHeight: '400px' }}>
                 {testimonial.videoUrl ? (
                   (testimonial as any).isGoogleDrive ? (
                     <iframe
@@ -91,15 +91,17 @@ const TestimonialsSection = React.memo(() => {
                   </div>
                 )}
               </div>
-              <div className="flex items-center gap-3 mb-2">
-                <div className="flex">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-current" />
-                  ))}
+              <div className="mt-auto">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="flex">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="font-bold text-black text-sm sm:text-base">{testimonial.name}</p>
                 </div>
-                <p className="font-bold text-black text-sm sm:text-base">{testimonial.name}</p>
+                <p className="text-gray-500 text-xs sm:text-sm">{testimonial.location}</p>
               </div>
-              <p className="text-gray-500 text-xs sm:text-sm">{testimonial.location}</p>
             </div>
           ))}
         </div>
@@ -112,7 +114,7 @@ const TestimonialsSection = React.memo(() => {
             }}
             className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-lg text-lg sm:text-xl lg:text-2xl transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
           >
-            <span className="text-center">QUERO RESULTADOS COMO ESTES!</span>
+            <span className="text-center">Quero atendimento on-line agora</span>
           </button>
         </div>
       </div>

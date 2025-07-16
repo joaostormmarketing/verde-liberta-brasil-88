@@ -22,7 +22,7 @@ const BenefitsSection = () => {
     {
       icon: CheckCircle,
       title: "Garantia de Satisfação",
-      description: "Comprometimento total com os resultados do seu caso"
+      description: "Comprometimento total com os resultados do seu caso. Garantia por 03 meses sem nenhum questionamento."
     }
   ];
 
@@ -57,7 +57,7 @@ const BenefitsSection = () => {
             }}
             className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-lg text-lg sm:text-xl lg:text-2xl transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
           >
-            QUERO LIMPAR MEU NOME AGORA
+            Quero atendimento on-line agora
           </button>
         </div>
       </div>

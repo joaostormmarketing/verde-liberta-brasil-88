@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import PriceSection from "@/components/PriceSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CEOSection from "@/components/CEOSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
@@ -19,6 +20,7 @@ const Index = () => {
       <PriceSection />
       <BenefitsSection />
       <TestimonialsSection />
+      <CEOSection />
       <Footer />
       <FloatingWhatsApp />
     </div>

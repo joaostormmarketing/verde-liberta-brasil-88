@@ -12,7 +12,7 @@ const StatsSection = () => {
       description: "Valor total economizado pelos nossos clientes"
     },
     {
-      number: "98%",
+      number: "100%",
       label: "Taxa de Sucesso",
       description: "Clientes com nome limpo em até 10 dias"
     }

@@ -26,7 +26,7 @@ const PriceSection = () => {
                 POR:
               </span>
               <span className="text-green-500 text-2xl sm:text-3xl lg:text-4xl font-black">
-                R$999,00
+                R$1.399,00
               </span>
             </div>
             <p className="text-white text-sm sm:text-base lg:text-lg">
@@ -43,7 +43,7 @@ const PriceSection = () => {
             className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-green-500 hover:bg-green-600 text-black font-bold py-4 px-4 sm:px-8 lg:px-12 rounded-full text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg w-full max-w-full sm:max-w-md lg:max-w-2xl"
           >
             <WhatsAppIcon className="w-5 h-5 flex-shrink-0" />
-            <span className="text-center leading-tight">QUERO LIMPAR MEU NOME AGORA</span>
+            <span className="text-center leading-tight">Quero atendimento on-line agora</span>
           </a>
         </div>
       </div>
