@@ -1,4 +1,3 @@
-
 import React, { useMemo, useCallback } from 'react';
 import { Star } from 'lucide-react';
 
@@ -36,7 +35,7 @@ const TestimonialsSection = React.memo(() => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-lg">
-              <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4" style={{ aspectRatio: '9/16' }}>
+              <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4" style={{ aspectRatio: '9/16', minHeight: '400px' }}>
                 {testimonial.videoUrl ? (
                   (testimonial as any).isGoogleDrive ? (
                     <iframe
@@ -47,7 +46,9 @@ const TestimonialsSection = React.memo(() => {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       style={{
-                        backgroundColor: 'black'
+                        backgroundColor: 'black',
+                        minWidth: '100%',
+                        minHeight: '100%'
                       }}
                     />
                   ) : (
