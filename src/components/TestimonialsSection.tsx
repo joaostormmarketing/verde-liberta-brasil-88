@@ -35,15 +35,11 @@ const TestimonialsSection = React.memo(() => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-lg">
-              <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4" style={{ 
-                aspectRatio: (testimonial as any).isGoogleDrive ? '16/9' : '9/16', 
-                minHeight: (testimonial as any).isGoogleDrive ? '250px' : '400px',
-                height: (testimonial as any).isGoogleDrive ? 'auto' : '400px'
-              }}>
+              <div className="relative rounded-lg shadow-lg overflow-hidden bg-black mb-3 sm:mb-4" style={{ aspectRatio: '9/16', minHeight: '400px' }}>
                 {testimonial.videoUrl ? (
                   (testimonial as any).isGoogleDrive ? (
                     <iframe
-                      className="w-full h-full absolute inset-0"
+                      className="w-full h-full"
                       src={testimonial.videoUrl}
                       title={`Depoimento ${testimonial.name}`}
                       frameBorder="0"
@@ -51,10 +47,8 @@ const TestimonialsSection = React.memo(() => {
                       allowFullScreen
                       style={{
                         backgroundColor: 'black',
-                        width: '100%',
-                        height: '100%',
-                        border: 'none',
-                        borderRadius: '8px'
+                        minWidth: '100%',
+                        minHeight: '100%'
                       }}
                     />
                   ) : (

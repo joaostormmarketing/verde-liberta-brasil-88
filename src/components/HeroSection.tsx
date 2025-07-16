@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="w-full max-w-5xl mx-auto mb-8 sm:mb-12 px-2 sm:px-4">
           <div className="relative w-full bg-black rounded-lg overflow-hidden shadow-2xl">
             <video
-              className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+              className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-contain bg-black"
               autoPlay
               playsInline
               controls
